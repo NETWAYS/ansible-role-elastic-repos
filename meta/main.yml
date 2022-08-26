@@ -4,17 +4,17 @@ galaxy_info:
   description: Elastic Repositories
   author: Thomas Widhalm <thomas.widhalm@netways.de>
   company: Netways GmbH
-  license: GPL-3.0-or-later
+  license: license(GPLv3)
 
-  min_ansible_version: 2.9
+  min_ansible_version: "2.9"
   platforms:
   - name: EL
     versions:
-    - 7
-    - 8
+    - "7"
+    - "8"
   - name: Debian
     versions:
-    - 10
+    - buster
 
   galaxy_tags:
     - logmanagement
