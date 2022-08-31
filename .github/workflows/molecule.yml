@@ -8,6 +8,9 @@ on:
       - main
   pull_request:
 
+molecule:
+  molecule-working-dir: ../../molecule-action/
+
 jobs:
   build:
     runs-on: ubuntu-latest
