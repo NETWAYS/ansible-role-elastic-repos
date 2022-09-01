@@ -17,7 +17,7 @@ galaxy_info:
     - buster
   - name: opensuse
     versions:
-    - 15.2
+    - "15.2"
 
   galaxy_tags:
     - logmanagement
