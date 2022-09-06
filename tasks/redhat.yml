@@ -12,8 +12,16 @@
       when:
         - not elastic_rpm_workaround | bool
 
-    - name: Set Crypto policies to legacy
-      ansible.builtin.command: "update-crypto-policies --set LEGACY"
+    - name: Enable workaround for rpm keys
+      block:
+
+        - name: Install crypto-policies-scripts
+          ansible.builtin.package:
+            name: crypto-policies-scripts
+
+        - name: Set Crypto policies to legacy
+          ansible.builtin.command: "update-crypto-policies --set LEGACY"
+
       when:
         - elastic_rpm_workaround | bool
   when:
