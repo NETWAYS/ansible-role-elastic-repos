@@ -12,6 +12,7 @@ galaxy_info:
     versions:
     - "7"
     - "8"
+    - "9"
   - name: Debian
     versions:
     - buster
@@ -20,10 +21,6 @@ galaxy_info:
     versions:
     - focal
     - jammy
-  - name: Rocky Linux
-    versions:
-    - "8"
-    - "9"
 
   galaxy_tags:
     - logmanagement
