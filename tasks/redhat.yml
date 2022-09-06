@@ -19,8 +19,11 @@
           ansible.builtin.package:
             name: crypto-policies-scripts
 
+        # since we don't expect to have that workaround for long
+        # we can skip having idempotency checks fixed
         - name: Set Crypto policies to legacy
           ansible.builtin.command: "update-crypto-policies --set LEGACY"
+            changed_when: false
 
       when:
         - elastic_rpm_workaround | bool
