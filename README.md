@@ -1,5 +1,8 @@
+This repository is deprecated! Please use our new [Ansible Collection Elastic Stack](https://github.com/NETWAYS/ansible-collection-elasticstack) instead.
+=========================================================================================================================================================
+
 Elastic Repos
-=========
+
 
 [![CI](https://github.com/widhalmt/ansible-role-elastic-repos/workflows/CI/badge.svg?event=push)](https://github.com/widhalmt/ansible-role-elastic-repos/actions?query=workflow%3ACI)
 
